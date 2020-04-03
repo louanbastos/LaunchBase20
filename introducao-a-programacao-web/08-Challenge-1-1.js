@@ -70,19 +70,13 @@ if (condition1) {
 console.log("\n");
 const employee = "Brenna";
 const sex = "F";
-const age = 50;
-const contribution = 30;
+const age = 22;
+const contribution = 0;
 const sum = age + contribution;
-if (sex === "F") {
-  if (sum >= 85) {
-    console.log(`${employee}, you can retire!`);
-  } else {
-    console.log(`${employee}, Silvana, you still cannot retire!`);
-  }
-} else if (sex === "M") {
-  if (sum >= 95) {
-    console.log(`${employee}, you can retire!`);
-  } else {
-    console.log(`${employee}, you still cannot retire!`);
-  }
+if (sex === "F" && sum >= 85) {
+  console.log(`${employee}, you can retire!`);
+} else if (sex === "M" && sum >= 95) {
+  console.log(`${employee}, you can retire!`);
+} else {
+  console.log(`${employee}, you still cannot retire!`);
 }
