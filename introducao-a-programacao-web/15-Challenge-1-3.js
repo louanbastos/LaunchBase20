@@ -24,6 +24,7 @@ function checksIfTheUserUsesCSS(user) {
   }
   return false;
 }
+
 for (i = 0; i < users.length; i++) {
   const worksWithCSS = checksIfTheUserUsesCSS(users[i]);
   if (worksWithCSS) {
