@@ -1,6 +1,5 @@
 //Create a program to average your students' grades and show the average on the console
 console.clear();
-
 const studentsA = [
   {
     name: "Louan",
@@ -39,17 +38,16 @@ const studentsB = [
   },
 ];
 
-function AverageCalculation(students) {
+function averageCalculation(students) {
   let sum = 0;
   for (let i = 0; i < students.length; i++) {
-    //the variable "sum" cannot be placed here due to the scope of "for", because if placed inside "for" you can only use it inside it.
     sum = sum + students[i].grade;
   }
   const average = sum / students.length;
   return average;
 }
 
-function SendMessage(average, classes) {
+function sendMessage(average, classes) {
   if (average >= 7) {
     console.log(
       `The ${classes} average grade was ${average}. Congratulations!`
@@ -61,7 +59,32 @@ function SendMessage(average, classes) {
   }
 }
 
-const Average1 = AverageCalculation(studentsA);
-const Average2 = AverageCalculation(studentsB);
-SendMessage(Average1, "Class A");
-SendMessage(Average2, "Class B");
+function markAsFailed(student) {
+  student.failed = false;
+  if (student.grade < 7) {
+    student.failed = true;
+  }
+}
+
+function sendMessageFailed(student) {
+  if (student.failed) {
+    console.log(`The Student ${student.name} was failed`);
+  }
+}
+
+function studentFailed(students) {
+  for (let student of students) {
+    markAsFailed(student);
+    sendMessageFailed(student);
+  }
+  //console.table(students);
+}
+
+const Average1 = averageCalculation(studentsA);
+const Average2 = averageCalculation(studentsB);
+
+sendMessage(Average1, "Class A");
+sendMessage(Average2, "Class B");
+
+studentFailed(studentsA);
+studentFailed(studentsB);
