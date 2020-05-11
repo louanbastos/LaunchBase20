@@ -1,4 +1,4 @@
-# Welcome to LaunchBase20 👋
+# LaunchBase20 🚀
 
 ![Version](https://img.shields.io/badge/version-2.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://docs.rocketseat.dev/)
