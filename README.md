@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Twitter: louanfontenele](https://img.shields.io/twitter/follow/louanfontenele.svg?style=social)](https://twitter.com/louanfontenele)
 
-> All class and challengs codes
+> All class and challenge codes
 
 ### 🏠 [Homepage](https://rocketseat.com.br/launchbase)
 
